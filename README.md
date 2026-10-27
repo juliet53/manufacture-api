@@ -1,3 +1,6 @@
+[![CI](https://github.com/juliet53/manufacture-api/actions/workflows/ci.yml/badge.svg)](https://github.com/juliet53/manufacture-api/actions/workflows/ci.yml)
+
+
 # manufacture-api
 Une mini API qui calcule des prix TTC.
 
@@ -10,6 +13,4 @@ Une mini API qui calcule des prix TTC.
 
 - @juliet53
 - @IleanaBls
-test
-test
-test
+
