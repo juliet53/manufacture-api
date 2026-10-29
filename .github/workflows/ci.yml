@@ -56,7 +56,7 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_HOST_URL: https://sonarcloud.io
   deploy:
-    needs: build-image
+    needs: image
     runs-on: self-hosted
     environment: production
     permissions:
