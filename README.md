@@ -2,10 +2,12 @@
 
 [![Quality gate status](https://sonarcloud.io/api/project_badges/measure?project=juliet53_manufacture-api&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=juliet53_manufacture-api)
 
+[![GitLab](https://gitlab.com/juliett10/manufacture-api/badges/main/pipeline.svg)](https://gitlab.com/juliett10/manufacture-api/-/pipelines)
+
 
 # manufacture-api
 Une mini API qui calcule des prix TTC.
-
+ 
 ## Equipe
 
 - @juliet53
