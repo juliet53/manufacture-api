@@ -1,5 +1,6 @@
 const express = require('express');
 const { calculerTTC } = require('./tva');
+const { Remise } = require('./remise');
 
 const app = express();
 const VERSION = process.env.APP_VERSION || 'dev';
@@ -17,4 +18,17 @@ app.get('/prix', (req, res) => {
   }
 });
 
+app.get('/remise', (req, res) => {
+  const prix = Number(req.query.prix);
+  const pourcentage = Number(req.query.pourcentage);
+  try {
+    res.json({ prix, pourcentage, prixRemise: appliquerRemise(prix, pourcentage) });
+  } catch (err) {
+    res.status(400).json({ erreur: err.message });
+  }
+});
+
+
 module.exports = app;
+
+
