@@ -22,7 +22,7 @@ app.get('/remise', (req, res) => {
   const prix = Number(req.query.prix);
   const pourcentage = Number(req.query.pourcentage);
   try {
-    res.json({ prix, pourcentage, prixRemise: appliquerRemise(prix, pourcentage) });
+    res.json({ prix, pourcentage, prixRemise: Remise(prix, pourcentage) });
   } catch (err) {
     res.status(400).json({ erreur: err.message });
   }
